@@ -12,7 +12,7 @@ exports.route = function(app) {
     app.use(function(req,res,next) {
        if(!new RegExp(controllersRouteRegEx).test(req.url)) {
            tools.resError(98,null,res);
-       } else { //API URL 地址合法
+       } else { //合法的URL地址
            //判断access token是否合法
            var accessToken1 = require("../config").apiConfig.accessToken;
            if(req.body.accessToken || req.query.accessToken) {

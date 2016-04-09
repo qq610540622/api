@@ -10,10 +10,10 @@ var schema = new mongoose.Schema({
     GoodsNo:String,
     Size:String,
     Season:{type:String,default:""}
-}, {collection : 'storagePosition'});
+}, {collection : 'storage'});
 schema.plugin(mongoosePaginate);
-var storagePosition = mongoose.model('storagePosition', schema);
-exports = storagePosition;
+var storage = mongoose.model('storage', schema);
+exports = storage;
 
 
 

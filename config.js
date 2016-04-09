@@ -1,10 +1,12 @@
 
 var config = {
-	db: 'mongodb://127.0.0.1:27017/db_ios',
+	db: 'mongodb://127.0.0.1:27017/api',
 	port:8080,
     apiConfig: {
         controller: [
-            "goods"
+            "goods",
+            "storage",
+            "goods_brand"
         ],
         ips: [
             "*.*.*.*"
@@ -29,7 +31,8 @@ var config = {
             110: "data error",
             111: "remove error"
         },
-        accessToken:"86167744-d68d-4215-8494-745a88d68549"
+        //accessToken:"86167744-d68d-4215-8494-745a88d68549",
+        accessToken:"abc",
     }
 };
 

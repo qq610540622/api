@@ -6,9 +6,9 @@ var schema = new mongoose.Schema({
     Id:Number,
     GoodsNo:String,
     ImageUrl:String
-}, {collection : 'goodsImage'});
+}, {collection : 'goods_image'});
 schema.plugin(mongoosePaginate);
-var goodsImage = mongoose.model('goodsImage', schema);
+var goodsImage = mongoose.model('goods_image', schema);
 exports = goodsImage;
 
 

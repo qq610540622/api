@@ -5,6 +5,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var config = require('./config');
 
 var app = express();
 
@@ -16,9 +17,8 @@ app.use(cookieParser());
 //路由
 require("./routes/index").route(app);
 
-var port = process.env.PORT || 8080;
-app.listen(port);
-console.log("server running to %s", port);
+app.listen(config.port);
+console.log("server running to %s", config.port);
 
 
 module.exports = app;

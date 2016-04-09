@@ -7,9 +7,9 @@ var schema = new mongoose.Schema({
     CategoryId:Number,
     CategoryName:String,
     OrderId:Number
-}, {collection : 'category'});
+}, {collection : 'goods_category'});
 schema.plugin(mongoosePaginate);
-var category = mongoose.model('category', schema);
+var category = mongoose.model('goods_category', schema);
 exports = category;
 
 

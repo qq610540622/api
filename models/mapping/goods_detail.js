@@ -13,10 +13,11 @@ var schema = new mongoose.Schema({
     Sku:String,
     BaseSku:String,
     GoodsNo:String,
-    BaseGoodsNo:String
-}, {collection : 'goodsDetail'});
+    BaseGoodsNo:String,
+    stock:Number
+}, {collection : 'goods_detail'});
 schema.plugin(mongoosePaginate);
-var goodsDetail = mongoose.model('goodsDetail', schema);
+var goodsDetail = mongoose.model('goods_detail', schema);
 exports = goodsDetail;
 
 

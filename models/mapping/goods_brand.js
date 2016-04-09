@@ -7,9 +7,9 @@ var schema = new mongoose.Schema({
     BrandEN:String,
     BrandCN:String,
     OrderId:Number
-}, {collection : 'brand'});
+}, {collection : 'goods_brand'});
 schema.plugin(mongoosePaginate);
-var brand = mongoose.model('brand', schema);
+var brand = mongoose.model('goods_brand', schema);
 exports = brand;
 
 
